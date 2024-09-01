@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/features/presentation/routes/routes.dart';
 
 class StartApp extends StatelessWidget {
   const StartApp({super.key});
@@ -10,7 +11,8 @@ class StartApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Placeholder(),
+      initialRoute: AppRotas.splashScreen,
+      onGenerateRoute: AppRotas.generateRoute,
     );
   }
 }
