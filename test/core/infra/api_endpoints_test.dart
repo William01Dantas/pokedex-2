@@ -38,7 +38,7 @@ void main() {
     });
 
     test('should cover all endpoints in the extension', () {
-      final allEndpoints = ApiEndpoint.values;
+      const allEndpoints = ApiEndpoint.values;
       final names = allEndpoints.map((e) => e.name).toList();
       final expectedNames = [
         'pokemon',

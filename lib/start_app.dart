@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/features/presentation/routes/routes.dart';
+import 'package:pokedex/core/routes/routes.dart';
 
 class StartApp extends StatelessWidget {
   const StartApp({super.key});

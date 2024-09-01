@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pokedex/features/presentation/routes/routes.dart';
+import 'package:pokedex/core/routes/routes.dart';
 import 'package:pokedex/features/presentation/screens/details_screen.dart';
-import 'package:pokedex/features/presentation/screens/home_screen.dart';
+import 'package:pokedex/features/presentation/screens/base_bar.dart';
 import 'package:pokedex/features/presentation/screens/splash_screen.dart';
 
 void main() {
@@ -24,7 +24,7 @@ void main() {
         initialRoute: AppRotas.homeScreen,
       ));
 
-      expect(find.byType(HomeScreen), findsOneWidget);
+      expect(find.byType(BaseBar), findsOneWidget);
     });
 
     testWidgets('deve retornar DetailsScreen para rota "/detailsScreen"',

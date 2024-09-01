@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pokedex/features/presentation/routes/routes.dart';
+import 'package:pokedex/core/routes/routes.dart';
 import 'package:pokedex/features/presentation/screens/splash_screen.dart';
 
 void main() {
