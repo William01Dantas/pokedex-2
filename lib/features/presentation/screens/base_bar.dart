@@ -6,8 +6,6 @@ import 'package:pokedex/features/presentation/screens/favorites_screen.dart';
 import 'package:pokedex/features/presentation/screens/home_screen.dart';
 import 'package:pokedex/features/presentation/stores/navigation_store.dart';
 
-import '../../../core/controllers/pokedex_controller.dart';
-
 class BaseBar extends StatelessWidget {
   const BaseBar({super.key});
 
@@ -21,8 +19,7 @@ class BaseBar extends StatelessWidget {
           index: navigationStore.selectedIndex,
           children: [
             const HomeScreen(),
-            DetailsScreen(
-            ),
+            DetailsScreen(),
             const FavoritesScreen(),
           ],
         );

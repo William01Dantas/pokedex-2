@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
 import 'package:pokedex/features/presentation/screens/details_screen.dart';
 import 'package:pokedex/features/presentation/screens/favorites_screen.dart';
 import 'package:pokedex/features/presentation/screens/base_bar.dart';
 import 'package:pokedex/features/presentation/screens/home_screen.dart';
 import 'package:pokedex/features/presentation/screens/splash_screen.dart';
-
-import '../controllers/pokedex_controller.dart';
 
 class AppRotas {
   static const splashScreen = '/';

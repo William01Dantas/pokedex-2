@@ -1,16 +1,47 @@
-# pokedex
+# Pokedex Flutter - Um Guia Completo
 
-A new Flutter project.
+## Descrição:
 
-## Getting Started
+    Este repositório contém o código-fonte de um aplicativo Pokedex desenvolvido com Flutter, 
+    versão 3.24.1. 
+    O aplicativo permite pesquisar, visualizar detalhes e adicionar Pokémon aos favoritos.
 
-This project is a starting point for a Flutter application.
+### Pré-requisitos:
 
-A few resources to get you started if this is your first Flutter project:
+    Flutter SDK instalado (versão 3.24.1 ou superior)
+    Dart SDK instalado (versão 3.2.0 ou superior)
+    Um editor de código de sua preferência (e.g., Visual Studio Code, Android Studio)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#### Configuração:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone o repositório:
+   Bash
+   git clone https://github.com/seu-repositorio/pokedex-flutter.git
+
+2. Navegue para o diretório do projeto:
+   Bash
+   cd pokedex-flutter
+
+3. Obtenha as dependências:
+   Bash
+   flutter pub get
+
+4. Obtenha os arquivos MOBX
+   Bash
+   dart run build_runner build --delete-conflicting-outputs
+
+5. Execução:
+   Conecte um dispositivo físico ou emulador:
+
+   Para dispositivos físicos, certifique-se de que o dispositivo esteja conectado e habilitado para depuração USB.
+   Para emuladores, execute o emulador desejado.
+
+6. Execute o aplicativo:
+   Bash
+   flutter run
+
+##### Testes:
+
+1. Execute os testes unitários:
+   Bash
+   flutter test
