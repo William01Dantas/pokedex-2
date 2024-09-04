@@ -4,6 +4,7 @@ import 'package:pokedex/features/presentation/stores/navigation_store.dart';
 import 'package:pokedex/start_app.dart';
 
 import 'core/controllers/home_controller.dart';
+import 'core/controllers/pokedex_controller.dart';
 import 'features/presentation/stores/pokemon_store.dart';
 
 final GetIt getIt = GetIt.instance;
@@ -12,6 +13,8 @@ void setup() {
   getIt.registerSingleton<PokemonStore>(PokemonStore());
   getIt.registerSingleton<NavigationStore>(NavigationStore());
   getIt.registerSingleton<HomeController>(HomeController());
+  getIt.registerSingleton<PokedexController>(PokedexController());
+  getIt.registerFactory<PageController>(() => PageController());
 }
 
 void main() {

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:lottie/lottie.dart';
+import 'package:pokedex/core/controllers/pokedex_controller.dart';
 import 'package:pokedex/core/presenters/theme/size_outlet.dart';
+import 'package:pokedex/features/presentation/screens/details_screen.dart';
 
 import '../../../core/controllers/home_controller.dart';
 import '../widgets/card_pokemon_widget.dart';
@@ -45,7 +47,19 @@ class _HomeScreenState extends State<HomeScreen> {
       itemCount: homeController.listaPokemon.length,
       itemBuilder: (context, index) {
         final pokemon = homeController.listaPokemon[index];
-        return CardPokemon(pokemon: pokemon);
+        return CardPokemon(
+          pokemon: pokemon,
+          onTap: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => DetailsScreen(
+
+                ),
+              ),
+            );
+          },
+        );
       },
     );
   }
